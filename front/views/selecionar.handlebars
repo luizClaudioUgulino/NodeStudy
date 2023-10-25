@@ -1,0 +1,11 @@
+<form action="/editar" method="POST">
+    <img src="../imagens/arroz.png">
+
+    <input type="hidden" value="{{dados.id}}" name="id" class="form-control" readonly>
+    <input type="text" value="{{dados.nome}}" placeholder="Nome" name="nome" class="form-control">
+    <input type="text" value="{{dados.idade}}" placeholder="idade" name="idade" class="form-control">
+    <input type="submit" value="Alterar" class="btn btn-primary btneditar">
+
+    <a href="/remover/{{dados.id}}" class="btn btn-danger">Remover</a>
+    <a href="/" class="btn btn-secondary">Cancelar</a>
+</form>

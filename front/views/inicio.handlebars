@@ -1,0 +1,35 @@
+
+
+<form action="/cadastrar" method="POST">
+    <img src="imagens/arroz.png">
+    <input type="text" placeholder="Nome" name="nome" class="form-control">
+    <input type="text" placeholder="idade" name="idade" class="form-control">
+    <input type="submit" value="cadastrar" class="btn btn-primary">
+
+
+</form>
+
+<table class="table table-striped">
+
+    <thead>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Selecionar</th>
+    </thead>
+    
+    <tbody>
+
+        {{#each dados}}
+
+
+        <tr>
+        <th>{{nome}}</th>
+        <th>{{idade}}</th>
+        <th> <a href="selecionar/{{id}}">Selecionar</a> </th>
+        
+        {{/each}}
+
+        </tr>
+    </tbody>
+
+</table>
